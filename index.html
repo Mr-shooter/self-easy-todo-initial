@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simple todo webapp">
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main>
+      <section class="inputs">
+        <div>
+          <label for="text">Название</label>
+          <input type="text" id="text">
+        </div>
+        <div>
+          <label for="fuck">Описание</label>
+          <textarea  id="fuck" cols="" rows=""></textarea>
+        </div>
+        <button >Добавить</button>
+      </section>
+      <section class="cards">
+        <article class="card">
+          <h2>
+            Обычное задание
+          </h2>
+          <p>описание</p>
+          <small>06.08.2023 20:10</small>
+          <div>
+            <i class="card__close">✘</i>
+            <i class="card__solve">✓</i>
+          </div>
+        </article>
+        <article class="card card-solved">
+          <h2>
+            Обычное задание
+          </h2>
+          <p>описание</p>
+          <small>06.08.2023 20:10</small>
+          <div>
+            <i class="card__close">✘</i>
+            <i class="card__solve">✓</i>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
